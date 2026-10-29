@@ -7,11 +7,12 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#111111" />
     <title>Walk the house</title>
-    <style>html,body{overscroll-behavior:none;background:#111;height:100%;margin:0;overflow:hidden}body{color:#e9e6df;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;font:14px/1.4 system-ui,-apple-system,sans-serif}#scene{touch-action:none;outline:none;width:100vw;height:100dvh;display:block;position:fixed;inset:0}#status,#hint{pointer-events:none;text-align:center;transition:opacity .6s;position:fixed;left:50%;transform:translate(-50%)}#status{opacity:.8;margin-top:-10px;top:50%}#hint{bottom:calc(24px + env(safe-area-inset-bottom));opacity:0;background:#0008;border-radius:999px;padding:8px 14px}.shown{opacity:1!important}.gone{opacity:0!important}</style>
-    <script type="module" crossorigin src="/house-walk/assets/index-BzLysxwg.js"></script>
+    <style>html,body{overscroll-behavior:none;background:#111;height:100%;margin:0;overflow:hidden}body{color:#e9e6df;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;font:14px/1.4 system-ui,-apple-system,sans-serif}#scene{touch-action:none;outline:none;width:100vw;height:100dvh;display:block;position:fixed;inset:0}#status,#hint{pointer-events:none;text-align:center;transition:opacity .6s;position:fixed;left:50%;transform:translate(-50%)}#status{opacity:.8;margin-top:-10px;top:50%}#hint{bottom:calc(24px + env(safe-area-inset-bottom));opacity:0;background:#0008;border-radius:999px;padding:8px 14px}.shown{opacity:1!important}.gone{opacity:0!important}#stick{pointer-events:none;-webkit-backdrop-filter:blur(2px);background:#0003;border:2px solid #fff5;border-radius:50%;width:128px;height:128px;margin:-64px 0 0 -64px;display:none;position:fixed}#knob{background:#fffa;border-radius:50%;width:56px;height:56px;margin:-28px 0 0 -28px;position:absolute;top:50%;left:50%;box-shadow:0 2px 8px #0006}body.touch #stick{display:block}body.touch #stick.held{border-color:#fff9}</style>
+    <script type="module" crossorigin src="/house-walk/assets/index-CFECYvaK.js"></script>
   </head>
   <body>
     <canvas id="scene" tabindex="0" aria-label="Walk through the house"></canvas>
+    <div id="stick" aria-hidden="true"><div id="knob"></div></div>
     <div id="status" role="status">Loading…</div>
     <div id="hint" aria-hidden="true"></div>
   </body>
